@@ -2,10 +2,10 @@
 module.exports = {
   content: ['index.html'],
   theme: {
-    screens: {
-      
-    },
     extend: {
+      screens: {
+      
+      },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
       },
