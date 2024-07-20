@@ -1,29 +1,35 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link href="src/output.css" rel="stylesheet"> -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Link ke Google Fonts untuk Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="src/output.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link ke Google Fonts untuk Poppins -->
+    <style>
+        /* CSS kustom untuk font Poppins */
+        body {
+          font-family: 'Poppins', sans-serif;
+        }
+      </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-black">
-    <!-- Navbar section -->
-    <section id="navbar" class="container mx-auto pt-10 flex justify-around relative">
-         <!-- Element -->
-        <span class="absolute -z-10 -bottom-36 -left-40 w-full max-w-full">
-            <svg class="w-full h-auto" viewBox="0 0 809 725" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M809 320.5C809 543.899 627.899 725 404.5 725C181.101 725 0 543.899 0 320.5C0 97.1008 181.101 -84 404.5 -84C627.899 -84 809 97.1008 809 320.5Z" fill="url(#paint0_radial_4_60)"/>
-                <defs>
-                <radialGradient id="paint0_radial_4_60" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(404.5 320.5) rotate(90) scale(404.5)">
-                <stop stop-color="#0B60B0"/>
-                <stop offset="0.933252" stop-opacity="0"/>
-                </radialGradient>
-                </defs>
-            </svg>
-        </span>
+     <!-- Element -->
+     <span class="absolute -z-10 -translate-y-2/3 -left-40 w-full max-w-full">
+        <svg class="w-full h-auto" viewBox="0 0 809 725" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M809 320.5C809 543.899 627.899 725 404.5 725C181.101 725 0 543.899 0 320.5C0 97.1008 181.101 -84 404.5 -84C627.899 -84 809 97.1008 809 320.5Z" fill="url(#paint0_radial_4_60)"/>
+            <defs>
+            <radialGradient id="paint0_radial_4_60" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(404.5 320.5) rotate(90) scale(404.5)">
+            <stop stop-color="#0B60B0"/>
+            <stop offset="0.933252" stop-opacity="0"/>
+            </radialGradient>
+            </defs>
+        </svg>
+    </span>
 
+    <!-- Navbar section -->
+    <section id="navbar" class="container mx-auto py-5 flex md:justify-around justify-between fixed md:px-0 px-10 backdrop-blur-sm">
         <!-- LOGO -->
         <div class="text-white">
             <svg width="38" height="34" viewBox="0 0 76 67" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,17 +52,24 @@
         <div class="md:flex items-center hidden">
             <a class="text-white bg-sky-600 px-5 py-2 rounded-md">Contact Me</a>
         </div>
+
+         <!-- Hamburger Icon -->
+         <button id="hamburger" class="text-white text-3xl md:hidden lg:hidden">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
     </section>
     
     <!-- Hero section -->
-    <section id="hero" class="w-full container mx-auto md:flex block pt-20 md:justify-around justify-center">
+    <section id="hero" class="w-full container mx-auto md:flex lg:flex block pt-28 justify-around">
         <span class="flex justify-center">
-            <img src="./src/img/profil.jpg" alt="" class="w-2/3 sm:w-1/2 md:w-full h-auto object-cover rounded-2xl shadow-xl shadow-sky-900">
+            <img src="./src/img/profil.jpg" alt="" class="w-2/3 sm:w-5/6 h-auto object-cover rounded-2xl shadow-xl shadow-sky-900">
         </span>
-        <div class="text-white pt-10">
+        <div class="text-white md:pt-6 pt-20 md:w-1/2 lg:w-auto" >
             <h2 class="text-2xl flex md:justify-start justify-center ph">Hello 👋, it's Me</h2>
-            <h1 class="text-4xl md:text-7xl lg:text-6xl font-extrabold text-sky-600 my-3 md:justify-start justify-center flex">Diar</h1>
-            <div class="text-xl md:text-3xl font-medium flex md:justify-start justify-center">
+            <h1 class="text-7xl  lg:text-6xl font-extrabold text-sky-600 my-5 md:justify-start justify-center flex">Diar</h1>
+            <div class="text-xl md:text-xl lg:text-3xl font-medium flex md:justify-start justify-center">
                 <h2 class="flex md:justify-start justify-center">And I'm a </h2>
                 <h2 class="pl-2 font-bold text-sky-500">Web Developer</h2>
             </div>
